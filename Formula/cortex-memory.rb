@@ -5,21 +5,21 @@
 class CortexMemory < Formula
   desc "Import-first, observable memory layer for AI agents. Memory that forgets."
   homepage "https://github.com/hurttlocker/cortex"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hurttlocker/cortex/releases/download/v0.5.0/cortex-darwin-amd64.tar.gz"
-      sha256 "20b2d9696cfca79472e045216421ac67d95626b11e9437e6d5c8a6037a0b8dcc"
+      url "https://github.com/hurttlocker/cortex/releases/download/v0.6.0/cortex-darwin-amd64.tar.gz"
+      sha256 "20ecd0891165a5321a804191ec60256326d75f1fc370ba1e89a9f47302998557"
 
       define_method(:install) do
         bin.install "cortex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hurttlocker/cortex/releases/download/v0.5.0/cortex-darwin-arm64.tar.gz"
-      sha256 "16a67e6e62b2f23d4b719f286c402c347703de0fc5c3a7e4079302b5a579861d"
+      url "https://github.com/hurttlocker/cortex/releases/download/v0.6.0/cortex-darwin-arm64.tar.gz"
+      sha256 "02bce507898514e72ff7452bfcd4f7a8cd0a34f73644b69e24900287de94bcce"
 
       define_method(:install) do
         bin.install "cortex"
@@ -29,15 +29,15 @@ class CortexMemory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hurttlocker/cortex/releases/download/v0.5.0/cortex-linux-amd64.tar.gz"
-      sha256 "2da9706ef0acdf109628bdf900d706c59760c405807165ec66975f2717c01e72"
+      url "https://github.com/hurttlocker/cortex/releases/download/v0.6.0/cortex-linux-amd64.tar.gz"
+      sha256 "62fe59e14cca2bf656c43104a4a0ab8ccb97062fab2df8cca8e50da4fbb470cf"
       define_method(:install) do
         bin.install "cortex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hurttlocker/cortex/releases/download/v0.5.0/cortex-linux-arm64.tar.gz"
-      sha256 "87a157847db1c3bec33e2b5d1367a740ac87c1338a4289c4cd0cb2e9f50df09c"
+      url "https://github.com/hurttlocker/cortex/releases/download/v0.6.0/cortex-linux-arm64.tar.gz"
+      sha256 "b38f8b1dfb92b2034889d9f9f61dc913d314f04ab1c538ea0f27b94db79ca934"
       define_method(:install) do
         bin.install "cortex"
       end
