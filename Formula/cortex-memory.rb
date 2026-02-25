@@ -11,7 +11,7 @@ class CortexMemory < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hurttlocker/cortex/releases/download/v0.9.0/cortex-darwin-amd64.tar.gz"
-      sha256 "6fecb55baba556e0ab0139d0bf0ec02e264e91b86e439db671829df5395f2dc7"
+      sha256 "652501727871489aeba25cd63b60c85362e82b7971e79ab48cd35cf86783551a"
 
       def install
         bin.install "cortex"
@@ -19,7 +19,7 @@ class CortexMemory < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hurttlocker/cortex/releases/download/v0.9.0/cortex-darwin-arm64.tar.gz"
-      sha256 "7f0aead199a71ca3c86136401bccb55f22d303a936994367111e7bb5752fad5f"
+      sha256 "bea27f931fa8bd8d8292684a204ab89d4fc8ecda46495afafd3364f8bc6a8eb5"
 
       def install
         bin.install "cortex"
@@ -30,14 +30,14 @@ class CortexMemory < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hurttlocker/cortex/releases/download/v0.9.0/cortex-linux-amd64.tar.gz"
-      sha256 "444106460c26a85d49c2a358be08fb5e3ba9a9f99e546e4256c157f70730bca4"
+      sha256 "6f204b270b1b60d0d2582b230b7b1d03f817df1e67e984509bcef4fe7a721b0e"
       def install
         bin.install "cortex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hurttlocker/cortex/releases/download/v0.9.0/cortex-linux-arm64.tar.gz"
-      sha256 "99ccc679181405b1bc2c1a3ca6614dc71e3f32350f0998afdedea78a96c19fe0"
+      sha256 "df84249388038b493e3c4b4f428979441e35fdf0b022a285cd5fe193fa9e8440"
       def install
         bin.install "cortex"
       end
